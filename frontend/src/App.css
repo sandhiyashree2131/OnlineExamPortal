@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7ff;
+  color: #17213c;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.navbar {
+  height: 76px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e8eaf3;
+}
+
+.navbar h2 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.navbar h2 span {
+  color: #6558e8;
+}
+
+.nav-label {
+  color: #69728b;
+  font-size: 14px;
+}
+
+.hero {
+  max-width: 1150px;
+  min-height: 650px;
+  margin: auto;
+  padding: 65px 25px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.eyebrow {
+  color: #6558e8;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.12;
+  margin: 22px 0;
+}
+
+.hero-content h1 span {
+  color: #6558e8;
+}
+
+.description {
+  color: #69728b;
+  line-height: 1.8;
+  max-width: 440px;
+}
+
+.features {
+  display: grid;
+  gap: 17px;
+  margin-top: 32px;
+  color: #394560;
+  font-size: 14px;
+}
+
+.features div::first-letter {
+  color: #6558e8;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow: 0 15px 55px #29345c12;
+  border: 1px solid #eaecf5;
+}
+
+.login-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: #efedff;
+  color: #6558e8;
+  border-radius: 14px;
+  font-size: 27px;
+}
+
+.login-card h2 {
+  margin: 22px 0 8px;
+  font-size: 27px;
+}
+
+.login-subtitle {
+  color: #7b849a;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.login-card label {
+  display: block;
+  margin: 19px 0 9px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.role-options {
+  display: flex;
+  gap: 10px;
+}
+
+.role-options button {
+  flex: 1;
+  padding: 12px 5px;
+  background: white;
+  border: 1px solid #dfe2ef;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.role-options button.active {
+  background: #f0eeff;
+  color: #6558e8;
+  border-color: #6558e8;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dfe2ef;
+  border-radius: 9px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #6558e8;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #6558e8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #5144cf;
+}
+
+.register {
+  margin-top: 23px;
+  text-align: center;
+  font-size: 12px;
+  color: #69728b;
+}
+
+.register a {
+  color: #6558e8;
+  text-decoration: none;
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  font-size: 12px;
+  color: #7b849a;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 40px 22px;
+  }
+
+  .navbar {
+    padding: 0 22px;
+  }
+
+  .nav-label {
+    font-size: 11px;
+  }
+}
